@@ -8,7 +8,12 @@ Now you will put your new skills to use with a large end-of-Phase project! This 
 
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+This project requires the use Explanatory Data Analyisis to generate insights
+for Microsoft as our business stakeholder.
+Microsoft sees all the big companies creating original video content and they want 
+to get in on the fun. They have decided to create a 'new movie studio', but they don’t 
+know anything about creating movies.
+
 
 ### Business Problem
 
@@ -16,19 +21,19 @@ Microsoft sees all the big companies creating original video content and they wa
 
 ### The Data
 
-In the folder `zippedData` are movie datasets from:
+For this project, we will use the data under the file path `zippedData/...`. These files contain information about movies. They represent historical data on movies for recent past years, hence this data will be modified for the purpose of the analysis.
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+The data is contained in three separate CSV files:
+1. `bom.movie_gross.csv`: each record represents movie title, with attributes of that movie (e.g. year). The domestic_gross and foreign_gross are represented and each movie listed has a corresponding studio of creation.
+2. `title.ratings.csv`: each record represents a movie title, then the Genre and Start year columns with values on the same.
+2. `title.basics.csv`: each record represents a movie, with additional columns such as the average ratings
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+The features of interest for this analysis will be:
+`movie_title`: The title (or AKA) of the Movie
+`movie_rating`: The rating of the movie
+`movie_type`: The genre of the movie
+
 
 ## Deliverables
 
@@ -62,4 +67,20 @@ Review the "Project Submission & Review" page in the "Milestones Instructions" t
 
 ## Summary
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+#### Conclusion
+The analysis done for the above dataset chosen yields the following conclusion.
+1. The most preferred genre / type of films are the Action-based.
+2. In the recent years, the most produced type of films are the Action-based Films
+3. The year that returned the most domestic gross is 2018. We are able to relate this with the gemre of film produced that year - which represents the 'Action' based films.
+
+
+#### Recommendation
+From the analysis done above, I would recommend that the Stakeholders:
+1. Should consider creating Action-based films
+2. Should consider creating films with less runtime runtime in minutes. In doing so, this will yield to  higher ratings from viewers and in turn more revenue for the stakeholder.
+
+#### Limitations of my findings
+I agree that the analysis done above doesn't cover all the bases and is a start in solving the business problem, of which type of films should be created by the stakeholder.
+
+
+To improve this project in the future, I would include more of the datasets provided in the zippedData folder, and provide relationships between the data somewhat recorded. This will in no doubt be useful in providing additional insights and recommendations to the stakeholder.
